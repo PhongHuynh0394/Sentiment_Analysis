@@ -29,7 +29,11 @@ Then patse your API key in to file `env.template` and run the following command 
 ```bash
 cat env.template > .env
 ```
-Finally, deploy **Streamlit app**: `streamlit run main.py`
+Finally, deploy **Streamlit app**:
+```bash
+cd app/
+streamlit run main.py
+```
 
 ## Finally
 Feel free to use and try :))

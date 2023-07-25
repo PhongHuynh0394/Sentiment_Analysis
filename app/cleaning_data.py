@@ -1,15 +1,15 @@
-
 import re
+import os
 import pickle
 from nltk.corpus import stopwords
 from tensorflow.keras.preprocessing.text import Tokenizer 
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-# nlt
+# nltk.download('stopwords')
 class cleaning_data:
   def __init__(self, text=''):
     self.text = text
-    with open("./models/word_tokenizer.pkl", "rb") as file:
+    with open("../models/word_tokenizer.pkl", "rb") as file:
       self.word_tokenizer = pickle.load(file)
   
   def remove_abb(self,text):
@@ -138,3 +138,5 @@ class cleaning_data:
     cleaned = self.word_tokenizer.texts_to_sequences(cleaned)
     return pad_sequences(cleaned, padding="post", maxlen=100)
 
+if __name__ == "__main__":
+  print(os.getcwd())

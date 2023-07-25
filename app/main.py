@@ -1,5 +1,7 @@
 import streamlit as st
 
+
+
 # Page config
 st.set_page_config(
     page_title="Sentiment analysis",
@@ -12,10 +14,10 @@ st.set_page_config(
         'About': "# This is a header. This is an *extremely* cool app!"
     }
 )
-import sidebar
-import idea_1
-import idea_2
-import home
+import sidebar as sidebar
+import idea_1 as idea_1
+import idea_2 as idea_2
+import home as home
 
 # Show page
 page = sidebar.show()
@@ -27,17 +29,3 @@ elif page=="Idea 1":
     idea_1.renderPage()
 elif page=="Idea 2":
     idea_2.renderPage()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
