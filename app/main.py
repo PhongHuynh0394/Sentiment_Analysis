@@ -18,6 +18,8 @@ import sidebar as sidebar
 import idea_1 as idea_1
 import idea_2 as idea_2
 import home as home
+import nltk
+nltk.download('stopwords')
 
 # Show page
 page = sidebar.show()

@@ -13,7 +13,7 @@ Word Embedding: using `glove.6B.100d.txt` from Kaggle: [Stanford's GloVe 100d wo
 
 To simply create virtual env supporting for CPU without AVX for Tensorflow, we can use Anaconda to help: 
 ```bash
-conda create -n vir_env tensorflow=2
+conda create -n vir_env tensorflow=2.15.0 python=3.9
 conda activate vir_env
 pip install -r requirements.txt
 ```
@@ -34,6 +34,12 @@ Finally, deploy **Streamlit app**:
 cd app/
 streamlit run main.py
 ```
+
+Streamlit app interface:
+
+![Main page](images/app1.png)
+![idea 1 page](images/app2.png)
+![idea 2 page](images/app3.png)
 
 ## Finally
 Feel free to use and try :))
